@@ -66,7 +66,11 @@ DaysSincePosting
 
 ## Models Used
 Model 	RMSE  	R² Score
+
 Linear  Regression	 1,370,889	0.245
+
 Random  Forest	 792,988	0.747
+
 Ridge	 1,370,888 	0.245
+
 Lasso 	1,370,888 	0.245
