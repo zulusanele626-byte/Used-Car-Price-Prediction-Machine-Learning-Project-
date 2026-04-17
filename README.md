@@ -118,9 +118,14 @@ Matplotlib, Seaborn
 ## Project Structure
 
 ├── data/
+
+
 │   └── used_cars_dataset.csv
+
 ├── notebooks/
+
 │   └── car_price_prediction.ipynb
+
 ├── README.md
 
 # Conclusion
