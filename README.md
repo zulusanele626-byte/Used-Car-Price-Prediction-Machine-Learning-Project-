@@ -74,3 +74,61 @@ Random  Forest	 792,988	0.747
 Ridge	 1,370,888 	0.245
 
 Lasso 	1,370,888 	0.245
+
+## Best Model: Random Forest Regressor
+Performance:
+RMSE: 792,988
+R² Score: 0.747
+
+## After Hyperparameter Tuning:
+RMSE: 791,452
+R² Score: 0.748
+
+Slight improvement after tuning confirms the model is already well-fitted.
+
+## Key Insights
+
+Random Forest significantly outperforms linear models, indicating:
+Non-linear relationships in data
+Mileage (kmDriven) negatively impacts price
+Transmission type influences pricing (Automatic cars tend to be higher)
+Feature engineering from raw text (AdditionInfo) improved data quality significantly
+
+## Challenges
+High percentage of missing values (~40% in some columns)
+Noisy and inconsistent text data
+Outliers (e.g., unrealistic car ages like 100+ years)
+High dimensionality after encoding (~188 features)
+
+## Future Improvements
+Remove extreme outliers (e.g., Age > 40 years)
+Use advanced models:
+XGBoost
+LightGBM
+Apply feature selection to reduce dimensionality
+Perform deeper hyperparameter tuning
+Deploy model using Streamlit or Flask
+
+## Tech Stack
+Python
+Pandas, NumPy
+Scikit-learn
+Matplotlib, Seaborn
+
+## Project Structure
+
+├── data/
+│   └── used_cars_dataset.csv
+├── notebooks/
+│   └── car_price_prediction.ipynb
+├── README.md
+
+# Conclusion
+This project demonstrates a complete machine learning workflow:
+
+Data cleaning
+Feature engineering
+Model training
+Evaluation & optimization
+
+The Random Forest model achieved strong predictive performance, making it suitable for real-world used car price estimation.
